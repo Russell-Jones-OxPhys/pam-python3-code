@@ -5,6 +5,7 @@ src/build/
 src/ctest
 src/test-pam_python.pam
 release.tmp
+doc/html/
 
 # Debian
 *.orig
