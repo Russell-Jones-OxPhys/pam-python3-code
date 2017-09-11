@@ -3,7 +3,7 @@ all:	ctest pam_python.so test-pam_python.pam
 WARNINGS=-Wall -Wextra -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wsign-compare -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Werror
 #WARNINGS=-Wunreachable-code 	# Gcc 4.1 .. 4.4 are too buggy to make this useful
 
-LIBDIR ?= /usr/lib/security
+LIBDIR ?= /lib/security
 
 pam_python.so: pam_python.c setup.py Makefile
 	@rm -f "$@"
